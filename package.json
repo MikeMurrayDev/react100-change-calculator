@@ -4,12 +4,12 @@
   "description": "REACT100 Assignment - Change Calculator",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm run webpack --mode development",
-    "start": "node server/index.js",
+    "build": "npm run webpack --mode production",
+    "start": "npm run build && node server/index.js",
     "lint": "eslint .",
     "test": "mocha test/.setup.js test/*.spec.js --exit"
   },
-  "dependencies": {
+  "dependencies": { 
     "axios": "^0.16.1",
     "babel": "^6.3.26",
     "babel-loader": "^7.1.1",
